@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<!--
+	ustora by freshdesignweb.com
+	Twitter: https://twitter.com/freshdesignweb
+	URL: https://www.freshdesignweb.com/ustora/
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NHOM_04</title>
+    
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/localDatabase.js"></script>
+  </head>
+  <body>
+   
+    <div class="header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="user-menu">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-user"></i> Tài khoản </a></li>
+                            <li><a href="#"><i class="fa fa-heart"></i> Yêu thích</a></li>
+                            <li><a href="cart.html"><i class="fa fa-user"></i> Giỏ hàng</a></li>
+                            <li><a href="checkout.html"><i class="fa fa-user"></i> Kiểm tra</a></li>
+                            <li><a href="#"><i class="fa fa-user"></i> Đăng nhập</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="header-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="dropdown dropdown-small">
+                                 <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">Đơn vị tiền tệ :</span><span class="value">VNĐ </span><b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">VNĐ</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown dropdown-small">
+                                <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">Ngôn ngữ :</span><span class="value">Tiếng Việt </span><b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Tiếng Việt</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End header area -->
+    
+    <div class="site-branding-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="logo">
+                        <h1><a href="./"><img class="logo1"src="img/logo.png"></a></h1>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6">
+                    <div class="shopping-item">
+                        <a href="cart.html">Giỏ hàng - <span class="cart-amunt"></span> <i class="fa fa-shopping-cart"></i> <span class="product-count"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End site branding area -->
+    
+    <div class="mainmenu-area">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div> 
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Trang chủ</a></li>
+                        <li><a href="shop.html">Thực đơn</a></li>
+                        <li><a href="single-product.html">Khuyến mãi</a></li>
+                        <li><a href="cart.html">Về chúng tôi</a></li>
+                        <li><a href="checkout.html">Liên hệ</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                    </ul>
+                </div>  
+            </div>
+        </div>
+    </div> <!-- End mainmenu area -->
+    
+    <div class="product-big-title-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-bit-title text-center">
+                        <h2>Shop</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="single-product-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="single-sidebar">
+                        <h2 class="sidebar-title">Tìm kiếm</h2>
+                        <form action="#">
+                            <input type="text" placeholder="Tìm kiếm...">
+                            <input type="submit" value="Tìm kiếm">
+                        </form>
+                    </div>
+                                   
+                    <div class="single-sidebar">
+                        <!-- Sản phẩm xem gần đây -->
+                    </div>
+                </div>
+                
+                <div class="col-md-8">
+                    <div class="product-content-right">
+                        <div class="product-breadcroumb">
+                            <a class="single-product__head__home" href="">Home</a>
+                            <a class="single-product__head__category" href="">Category Name</a>
+                            <a class="single-product__head__name" href="">Sony Smart TV - 2015</a>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="product-images">
+                                    <div class="product-main-img">
+                                        <img class="src" src="img/product-2.jpg" alt="">
+                                    </div>
+                                    
+                                    <div class="product-gallery">
+                                        <img src="img/product-thumb-1.jpg" alt="">
+                                        <img src="img/product-thumb-2.jpg" alt="">
+                                        <img src="img/product-thumb-3.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-6">
+                                <div class="product-inner">
+                                    <h2 class="product-name">Cheesecake socola</h2>
+                                    <div class="product-inner-price">
+                                        <ins id="new_price">120.000</ins> <del id="old_price">210.000</del>
+                                    </div>    
+                                    
+                                    <form action="" class="cart">
+                                        <div class="quantity">
+                                            <input id="quantity_to_cart" type="number" size="4" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
+                                        </div>
+                                        <a onclick="AddToCart()" class="add_to_cart_button" href="cart.html">Thêm vào giỏ hàng</a>
+                                    </form>   
+                                    
+                                    <div class="product-inner-category">
+                                        <p>Category: <a class="single-product__info__category" href="">Summer</a>. Tags: <a class="single-product__info__tags">Summer</a>. </p>
+                                    </div> 
+                                    
+                                    <div role="tabpanel">
+                                        <ul class="product-tab" role="tablist">
+                                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Mô tả</a></li>
+                                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Đánh giá</a></li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane fade in active" id="home">
+                                                <h2>Product Description</h2>  
+                                                <p></p>
+
+                                                <p></p>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane fade" id="profile">
+                                                <h2>Reviews</h2>
+                                                <div class="submit-review">
+                                                    <p><label for="name">Name</label> <input name="name" type="text"></p>
+                                                    <p><label for="email">Email</label> <input name="email" type="email"></p>
+                                                    <div class="rating-chooser">
+                                                        <p>Your rating</p>
+
+                                                        <div class="rating-wrap-post">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <p><label for="review">Your review</label> <textarea name="review" id="" cols="30" rows="10"></textarea></p>
+                                                    <p><input type="submit" value="Submit"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="related-products-wrapper">
+                            <h2 class="related-products-title">Sản phẩm gợi ý</h2>
+                            <div class="related-products-carousel">
+                                <div class="single-product">
+                                    <div class="product-f-image">
+                                        <img src="img/product-1.jpg" alt="">
+                                        <div class="product-hover">
+                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</a>
+                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> Chi tiết</a>
+                                        </div>
+                                    </div>
+                                    <h2><a href="">Bánh socola sốt cam</a></h2>
+                                    <div class="product-carousel-price">
+                                        <ins>80.000</ins> <del>140.000</del>
+                                    </div> 
+                                </div>
+                                
+                                <div class="single-product">
+                                    <div class="product-f-image">
+                                        <img src="img/product-2.jpg" alt="">
+                                        <div class="product-hover">
+                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</a>
+                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> Chi tiết</a>
+                                        </div>
+                                    </div>
+
+                                    <h2><a href="">Cheesecake socola</a></h2>
+                                    <div class="product-carousel-price">
+                                        <ins>120.000</ins> <del>210.000</del>
+                                    </div> 
+                                </div>
+                                <div class="single-product">
+                                    <div class="product-f-image">
+                                        <img src="img/product-3.jpg" alt="">
+                                        <div class="product-hover">
+                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</a>
+                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> Chi tiết</a>
+                                        </div>
+                                    </div>
+
+                                    <h2><a href="">Trà hoa cúc</a></h2>
+
+                                    <div class="product-carousel-price">
+                                        <ins>30.000</ins> <del>54.000</del>
+                                    </div>                                 
+                                </div>
+                                <div class="single-product">
+                                    <div class="product-f-image">
+                                        <img src="img/product-4.jpg" alt="">
+                                        <div class="product-hover">
+                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</a>
+                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> Chi tiết</a>
+                                        </div>
+                                    </div>
+
+                                    <h2><a href="">Bánh kem hoa hồng</a></h2>
+
+                                    <div class="product-carousel-price">
+                                        <ins>300.000</ins> <del>450.000</del>
+                                    </div>                            
+                                </div>
+                                <div class="single-product">
+                                    <div class="product-f-image">
+                                        <img src="img/product-5.jpg" alt="">
+                                        <div class="product-hover">
+                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                                        </div>
+                                    </div>
+
+                                    <h2><a href="">Sony Smart Air Condtion</a></h2>
+
+                                    <div class="product-carousel-price">
+                                        <ins>$1200.00</ins> <del>$1355.00</del>
+                                    </div>                                 
+                                </div>
+                                <div class="single-product">
+                                    <div class="product-f-image">
+                                        <img src="img/product-6.jpg" alt="">
+                                        <div class="product-hover">
+                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                                        </div>
+                                    </div>
+
+                                    <h2><a href="">Samsung gallaxy note 4</a></h2>
+
+                                    <div class="product-carousel-price">
+                                        <ins>$400.00</ins>
+                                    </div>                            
+                                </div>                                    
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer-top-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-about-us">
+                        <h2>280 <span>Bánh Ngọt</span></h2>
+                        <p>Nếu bạn là người yêu thích dư vị ngọt ngào của những chiếc bánh kem phô mai.Chắc chắn bạn không thể nào bỏ qua được 280 Bareky. Với sự tỉ mỉ trong khâu chế biến,cùng sức sáng tạo không ngừng để cho ra đời những chiếc bánh kem </p>
+                        <div class="footer-social">
+                            <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-menu">
+                        <h2 class="footer-wid-title">Khách hàng </h2>
+                        <ul>
+                            <li><a href="#">Tài khoản</a></li>
+                            <li><a href="#">Lịch sử đặt hàng</a></li>
+                            <li><a href="#">Danh sách yêu thích</a></li>
+                            <li><a href="#">Liên hệ cửa hàng</a></li>
+                            <li><a href="#">Về đầu trang</a></li>
+                        </ul>                        
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-menu">
+                        <h2 class="footer-wid-title">Thể loại</h2>
+                        <ul>
+                            <li><a href="#">Trà xanh</a></li>
+                            <li><a href="#">Cheesecake</a></li>
+                            <li><a href="#">Sandwiches</a></li>
+                            <li><a href="#">Donut</a></li>
+                            <li><a href="#">Khác</a></li>
+                        </ul>                        
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-newsletter">
+                        <h2 class="footer-wid-title">Bảng tin</h2>
+                        <p>Đăng kí nhận bản tin từ Bánh Ngọt 280 qua Email để nhận được các ưu đãi độc quyền mà bạn sẽ không thể tìm thấy ở bất cứ nơi nào khác</p>
+                        <div class="newsletter-form">
+                            <form action="#">
+                                <input type="email" placeholder="Nhập email của bạn">
+                                <input type="submit" value="Theo dõi">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End footer top area -->
+    <div class="footer-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="copyright">
+                       <p>&copy; 2015 uCommerce. All Rights Reserved. <a href="http://www.freshdesignweb.com" target="_blank">freshDesignweb.com</a></p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="footer-card-icon">
+                        <i class="fa fa-cc-discover"></i>
+                        <i class="fa fa-cc-mastercard"></i>
+                        <i class="fa fa-cc-paypal"></i>
+                        <i class="fa fa-cc-visa"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- Latest jQuery form server -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    
+    <!-- Bootstrap JS form CDN -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    
+    <!-- jQuery sticky menu -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    
+    <!-- jQuery easing -->
+    <script src="js/jquery.easing.1.3.min.js"></script>
+    
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+    
+    <script src="js/single-product.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>
